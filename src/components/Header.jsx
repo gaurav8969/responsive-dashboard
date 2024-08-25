@@ -1,7 +1,7 @@
 import { ArrowLeft, ArrowLeftFromLine, ArrowRightFromLine, Menu, Search } from 'lucide-react';
 import { useState } from 'react';
 import { useMenuDispatch } from '../contexts/MenuContext';
-import barbarian from '/assets/barbarian.png';
+import barbarian from '/faq-accordion/assets/barbarian.png';
 
 function Header(){
   const [showFullWidthSearch, setShowFullWidthSearch] = useState(false);
