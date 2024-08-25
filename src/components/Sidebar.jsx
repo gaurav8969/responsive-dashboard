@@ -1,6 +1,6 @@
 import { CircleHelp, CircleX, Cog, History, Home, MessageSquareDashed, User, Users, VenetianMask, Wrench } from 'lucide-react';
 import { useMenuDispatch, useMenuValue } from '../contexts/MenuContext';
-import nightSky from './assets/blueNight.jpg';
+import nightSky from '/assets/blueNight.jpg';
 
 function SideBar() {
   const menuValue = useMenuValue();

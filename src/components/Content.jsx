@@ -1,6 +1,6 @@
-import barbarian from './assets/barbarian.png';
-import laserCat from './assets/laserCat.png';
-import oppy from './assets/oppenheimer.png';
+import barbarian from '/assets/barbarian.png';
+import laserCat from '/assets/laserCat.png';
+import oppy from '/assets/oppenheimer.png';
 
 function Content(){
   return (
