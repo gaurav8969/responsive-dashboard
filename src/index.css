@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+  
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height:100vh;
+}
+
+#root{
+    min-height: 100vh;
+}
+
+.app{
+    min-height: 100vh;
+    max-width: 1920px;
+}
+
+.cards{
+    @apply w-full place-items-center font-sans
+    grid gap-10 grid-cols-[repeat(auto-fit,minmax(120px,1fr))]
+    ph:grid-cols-[repeat(auto-fit,minmax(150px,1fr))]
+    md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))];
+}
+
+.card{
+    @apply min-h-[120px] aspect-card bg-[#001c4e] text-white rounded-xl border-l-[8px] border-l-[#9acd32] flex flex-col items-center justify-center hover:border-l-[#ff4500] max-w-[200px] w-full;
+}
+
+.maintenance{
+    @apply text-[14px] font-bold sm:text-lg;
+}
+
+hr{
+    @apply h-[3px] bg-black opacity-60 w-[80%] my-2;
+}
+
+.user{
+    @apply flex gap-2 items-center w-full;
+}
+
+.user>div{
+    @apply flex flex-col items-start
+}
+
+.user>div>p{
+    @apply text-start;
+}
+
+.profile{
+    @apply w-12 h-12 rounded-full;
+}
+
+.username{
+    @apply text-lg font-bold;
+}
+
+.menu{
+    @apply flex flex-col justify-around items-center bg-[#000308] text-white h-[100vh] min-h-[600px];
+}
+
+.menu>div>button, .sidebar>div>button{
+    @apply flex gap-[10px] text-white;
+}
+
+@media(min-width:768px){
+    .app{
+        @apply grid grid-cols-[auto,1fr] grid-rows-[auto,1fr];
+        grid-template-areas:
+            "sidebar header"
+            "sidebar content";
+    }
+    .content{
+        grid-area: content;
+    }
+    .sidebar{
+        grid-area: sidebar;
+    }
+    .header{
+        grid-area: header;
+    }
+}
+
+@media(min-width:1920px){
+    .body, #root, .app{
+        min-height: unset;
+    }
+
+    .sidebar{
+        height: unset;
+    }
+}
