@@ -1,6 +1,6 @@
-import barbarian from '/faq-accordion/assets/barbarian.png';
-import laserCat from '/faq-accordion/assets/laserCat.png';
-import oppy from '/faq-accordion/assets/oppenheimer.png';
+import barbarian from '../assets/barbarian.png';
+import laserCat from '../assets/laserCat.png';
+import oppy from '../assets/oppenheimer.png';
 
 function Content(){
   return (
