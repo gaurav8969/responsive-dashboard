@@ -1,5 +1,6 @@
 import { CircleHelp, CircleX, Cog, History, Home, MessageSquareDashed, User, Users, VenetianMask, Wrench } from 'lucide-react';
 import { useMenuDispatch, useMenuValue } from '../contexts/MenuContext';
+import nightSky from './assets/blueNight.jpg';
 
 function SideBar() {
   const menuValue = useMenuValue();
@@ -14,7 +15,7 @@ function SideBar() {
       </button>
       <div className='absolute top-0 w-full'>
         <h2 className="text-3xl font-bold absolute top-2 left-1/2 -translate-x-1/2">Dashboard</h2>
-        <img src="/public/assets/bluenight.jpg" alt="night sky"
+        <img src={nightSky} alt="night sky"
           className='w-full z-0' />
       </div>
       <MenuItems />
@@ -25,7 +26,7 @@ function SideBar() {
     <div className={`sidebar ${menuValue ?'flex':'hidden'} md:flex flex-col justify-around items-center w-60 2xl:w-72 h-[100vh] min-h-[600px] sticky top-0 bg-[#000308]`}>
       <div className='absolute top-0'>
         <h2 className="text-white text-3xl font-bold absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">Dashboard</h2>
-        <img src="/public/assets/bluenight.jpg" alt="night sky"/>
+        <img src={nightSky} alt="night sky"/>
       </div>
       <div className='w-full' style={{ paddingTop: 'calc(100% * (2/3))' }}></div>
       <MenuItems />

@@ -1,3 +1,7 @@
+import barbarian from './assets/barbarian.png';
+import laserCat from './assets/laserCat.png';
+import oppy from './assets/oppenheimer.png';
+
 function Content(){
   return (
     <div className="content flex flex-col items-center p-4">
@@ -31,21 +35,21 @@ function Content(){
             <div className="text-xl font-bold my-4">Trending</div>
             <div className="bg-white rounded-xl p-2 my-2 flex flex-col gap-4">
               <div className="user">
-                <img className="profile bg-barbarianPurple" src="/public/assets/barbarian.png" alt="barb" />
+                <img className="profile bg-barbarianPurple" src={barbarian} alt="barb" />
                 <div>
                   <div className="username">@Mr.Barb</div>
                   <p>World Peace Negotiator</p>
                 </div>
               </div>
               <div className="user">
-                <img className="profile" src="/public/assets/laserCat.png" alt="barb" />
+                <img className="profile" src={laserCat} alt="barb" />
                 <div>
                   <div className="username">@Catman</div>
                   <p>Destroyer of Worlds</p>
                 </div>
               </div>
               <div className="user">
-                <img className="profile" src="/public/public/assets/oppenheimer.png" alt="barb" />
+                <img className="profile" src={oppy} alt="barb" />
                 <div>
                   <div className="username">@Oppy</div>
                   <p>Amused Spectator</p>
