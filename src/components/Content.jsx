@@ -31,21 +31,21 @@ function Content(){
             <div className="text-xl font-bold my-4">Trending</div>
             <div className="bg-white rounded-xl p-2 my-2 flex flex-col gap-4">
               <div className="user">
-                <img className="profile bg-barbarianPurple" src="./src/assets/barbarian.png" alt="barb" />
+                <img className="profile bg-barbarianPurple" src="/assets/barbarian.png" alt="barb" />
                 <div>
                   <div className="username">@Mr.Barb</div>
                   <p>World Peace Negotiator</p>
                 </div>
               </div>
               <div className="user">
-                <img className="profile" src="./src/assets/laserCat.png" alt="barb" />
+                <img className="profile" src="/assets/laserCat.png" alt="barb" />
                 <div>
                   <div className="username">@Catman</div>
                   <p>Destroyer of Worlds</p>
                 </div>
               </div>
               <div className="user">
-                <img className="profile" src="./src/assets/oppenheimer.png" alt="barb" />
+                <img className="profile" src="/assets/oppenheimer.png" alt="barb" />
                 <div>
                   <div className="username">@Oppy</div>
                   <p>Amused Spectator</p>

@@ -13,13 +13,13 @@ function Header(){
         <div className="row1 flex gap-4 justify-between">
           {form(showFullWidthSearch, setShowFullWidthSearch)}
           <div className="flex gap-2 items-center relative top-1">
-            <img src="./src/assets/barbarian.png" alt="barbarian" className='lg:h-14 lg:w-14 rounded-full h-12 w-12 bg-barbarianPurple' />
+            <img src="/assets/barbarian.png" alt="barbarian" className='lg:h-14 lg:w-14 rounded-full h-12 w-12 bg-barbarianPurple' />
             <div className='text-lg lg:text-2xl font-serif text-white'>Mr. Barb</div>
           </div>
         </div>
         <div className="row2 flex justify-between items-center">
           <div className='flex gap-1 items-center'>
-            <img src="./src/assets/barbarian.png" alt="barbarian" className='lg:h-16 lg:w-16 rounded-full w-12 h-12 bg-barbarianPurple' />
+            <img src="/assets/barbarian.png" alt="barbarian" className='lg:h-16 lg:w-16 rounded-full w-12 h-12 bg-barbarianPurple' />
             <div className='font-sans text-sm lg:text-lg text-white'>
               <p>Hi there</p>
               <p>Mr. Barb(@mrbarbarian)</p>
